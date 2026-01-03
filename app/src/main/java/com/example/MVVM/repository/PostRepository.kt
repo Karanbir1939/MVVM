@@ -10,6 +10,6 @@ import javax.inject.Singleton
 class PostRepository @Inject constructor(private val apiService: ApiService) {
 
     suspend fun getPosts(): Response<List<Post>> {
-        return apiService.getPosts()
+        return apiService.getPosts() // get Post
     }
 }
